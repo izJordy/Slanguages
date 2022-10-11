@@ -10,13 +10,14 @@
   --secondary-color: rgba(0, 17, 43, 0.950);
 }
 .dark-theme{
-  --primary-color: rgb(179, 179, 179);
-  --secondary-color: rgba(0, 11, 27, 0.95);
+  --primary-color: rgba(0, 0, 0, 0.932);
+  --secondary-color: rgb(231, 231, 231);
 }
 
 body{
   font-family: 'Montserrat', sans-serif;
   background-color: var(--primary-color);
+  overflow-y: hidden;
 }
 
 header{
@@ -26,6 +27,7 @@ header{
   justify-content: space-around;
   align-items: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.507);
+  margin-bottom: 55px;
 }
 
 ul{
@@ -46,10 +48,6 @@ ul{
   cursor: pointer;
 }
 
-.logo h1 span{
-  color: rgb(214, 192, 95);
-}
-
 ul li a{
   text-decoration: none;
   color: var(--primary-color);
@@ -63,23 +61,33 @@ main{
   justify-content: center;
 }
 
-.europe{
-  max-width: 880px;
-  height: auto;
-}
-
-.content-left{
-  width: 44%;
-}
-
 main h1{
   font-size: 54px;
   color: var(--secondary-color);
   text-transform: uppercase;
+  margin-left: 40%;
 }
 
 main h2{
   font-size: 20px;
   color: var(--secondary-color);
   text-transform: uppercase;
+  margin-left: 40%;
+}
+
+main p{
+  margin-left: 40%;
+  color: var(--secondary-color);
+}
+
+svg path{
+  fill: var(--secondary-color);
+  stroke: rgba(197, 21, 21, 0.856);
+  stroke-width: .25;
+}
+
+svg path:hover{
+  fill: rgba(197, 21, 21, 0.856);
+  transition: 0.6s;
+  cursor: pointer;
 }
